@@ -1,3 +1,4 @@
+HEAD
 # DevOps Projects
 
 ## Описание
@@ -7,9 +8,6 @@
 
 ### nginx-docker
 Развертывание веб-сервиса с использованием Docker и Nginx.
-
-### project2
-(добавишь позже)
 
 ## Стек
 - Linux
@@ -30,3 +28,19 @@ docker-compose up -d
 ```bash
 git add .
 git commit -m "add devops projects"
+=======
+# Dev-learning
+
+Мой репозиторий для изучения DevOps.
+
+## Разделы
+- Linux
+- Git
+- Docker
+- Networking
+- Bash
+- Ansible
+- Terraform
+- Kubernetes
+- Projects
+

@@ -1,3 +1,34 @@
+HEAD
+# DevOps Projects
+
+## Описание
+Набор учебных DevOps-проектов.
+
+## Структура
+
+### nginx-docker
+Развертывание веб-сервиса с использованием Docker и Nginx.
+
+## Стек
+- Linux
+- Docker
+- Docker Compose
+- Nginx
+- Git
+
+## Запуск
+
+```bash
+docker-compose up -d
+
+---
+
+## Закоммить
+
+```bash
+git add .
+git commit -m "add devops projects"
+=======
 # Dev-learning
 
 Мой репозиторий для изучения DevOps.
@@ -13,5 +44,3 @@
 - Kubernetes
 - Projects
 
-## Цель
-Собрать практические заметки, команды, мини-проекты и примеры конфигураций по DevOps и попасть на работу <*_*>

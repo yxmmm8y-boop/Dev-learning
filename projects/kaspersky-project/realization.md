@@ -27,10 +27,12 @@ sudo systemctl enable --now libvirtd
 Она запускает сервис виртуализации и включает его автозапуск
 
 Команда:
- ```sudo systemctl status libvirtd
+```
+sudo systemctl status libvirtd
 ```
 выполняет проверку и выводит такие данные:
-```libvirtd.service - libvirt legacy monolithic daemon
+```
+libvirtd.service - libvirt legacy monolithic daemon
      Loaded: loaded (/usr/lib/systemd/system/libvirtd.service; enabled; preset: disabled)
     Drop-In: /usr/lib/systemd/system/service.d
              └─10-timeout-abort.conf

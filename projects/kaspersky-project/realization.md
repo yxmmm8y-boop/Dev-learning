@@ -109,4 +109,30 @@ sudo dnf install -y ansible
 4. Задал host name "rocky-vm" и проверили айпи "192.XX8.XX2.XX9"
 5. Выбрал автоматический режим разметки диска - Automatic partitioning
 6. Создали юзера и наделили правами админа
+7. Машина загрузиласт (похожа на федору)
 
+## 6. Работа в ВМ
+
+1. Узнаем ip командой "ip a" и выдало вот:
+
+###1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+      valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host 
+       valid_lft forever preferred_lft forever
+###2: enp1s0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc fq_codel state UP group default qlen 1000
+    link/ether 52:54:00:34:a8:13 brd ff:ff:ff:ff:ff:ff
+    inet 192.168.122.209/24 brd 192.168.122.255 scope global dynamic noprefixroute enp1s0
+       valid_lft 3451sec preferred_lft 3451sec
+    inet6 fe80::5054:ff:fe34:a813/64 scope link noprefixroute 
+       valid_lft forever preferred_lft forever
+
+адрес ВМ **192.168.122.209**
+
+2. Включаем SSH (сетевой протокол, позволяющий безопасно управлять удаленными компьютерами и серверами через зашифрованный канал связи)
+команды:
+```
+	sudo dnf install -y openssh-server
+	sudo systemctl enable --now sshd
+```

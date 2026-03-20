@@ -1,0 +1,22 @@
+- name: Deploy microservice
+  hosts: servers
+  become: yes
+
+  tasks:
+    - name: Install python
+      dnf:
+        name: python3
+        state: present
+
+    - name: Create app directory
+      file:
+        path: /opt/microservice
+        state: directory
+
+    - name: Copy service
+      copy:
+        src: ../service/app.py
+        dest: /opt/microservice/app.py
+
+    - name: Run service
+      shell: nohup python3 /opt/microservice/app.py &

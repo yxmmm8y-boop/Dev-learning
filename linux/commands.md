@@ -7,7 +7,7 @@
 * touch - создать файл 
 * chmod - изменить права
 * sudo poweroff - выключить систему безопасно
-* sudo suspend - спящий режим
+* sudo systemctl suspend - спящий режим
 * sudo reboot - перезагрузка
 * sudo dnf upgrade - установка пакетов обновления системы 
 

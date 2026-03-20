@@ -59,7 +59,7 @@
 
  git clone - скачивает репозиторий с GitHub
 
- git pull origin main - явно отправляет в ветку main
+ git push origin main - явно отправляет в ветку main
 
  git pull origin main - явно скачивает из main
 
